@@ -1,0 +1,19 @@
+#main_header {
+	margin-top: 230px;
+	font-size: 42px;
+}
+form {
+	margin-left: 650px;
+	font-size: 22px;
+	display: inline-block;
+}
+button {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 5px 25px;
+	content: 40px;
+	border: none;
+	font-size: 20px;
+	background-color: rgb(51,153,255);
+	color: white;
+}

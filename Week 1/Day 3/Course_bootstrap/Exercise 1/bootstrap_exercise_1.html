@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Exercises</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Bootstrap Exercises</a> 
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Form</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Links <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><a href="#">Link3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="jumbotron alert alert-info" style="padding-top: 60px">
+    <h1 class="display-4">Jumbotron Alert!</h1>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Button.</a><br><br>
+    <a class="btn btn-success btn-lg" href="#" role="button">Button?</a><br><br>
+    <a class="btn btn-danger btn-lg" href="#" role="button">Button!</a>
+  </div>
+
+  <div class="container" style="border: 2px solid black; margin-top: 70px">
+    <div class="row">
+      <div class="col-md-4" style="border: 1px solid red;">Hello, this is a column</div>
+      <div class="col-md-4" style="border: 1px solid red;">Hello, this is also a column</div>
+      <div class="col-md-4" style="border: 1px solid red;">Hello, this is another column</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" style="border: 1px solid blue;">This is a column in a second row</div>
+      <div class="col-md-4" style="border: 1px solid blue;">This is also a column in a second row</div>
+      <div class="col-md-4" style="border: 1px solid blue;">This is another column in a second row</div>
+    </div>
+  </div>
+  <div class="container" style="border: 2px solid purple;">
+    <div class="row">
+      <div class="col-md-3 offset-md-3">This is a column with an offset of 3</div>
+      <div class="col-md-3 offset-md-3">This is also a column with an offset of 3</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">This is a column with no offset</div>
+      <div class="col-md-4 offset-md-4">This is a column with an offset of 4</div>
+    </div>
+  </div>
+    <div class="row" style="border: 2px solid black;">
+      <div class="col-md-6">Hello Hello Hello</div>
+      <div class="col-md-6">Bye</div> 
+    </div>
+    <div class="row" style="border: 2px solid blue;">
+      <div class="col-md-6">Greetings</div>
+      <div class="col-md-6">Goodbye</div>
+    </div>
+    <div class="container" style="border: 2px solid purple;">
+        <div class="col-md-6">Good Morning</div>
+        <div class="col-md-6">Good afternoon</div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="border: 2px solid blue;">This is responsive responsive responsive responsive responsive responsive responsive</div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="border: 2px solid red;">This is responsive responsive responsive responsive responsive responsive responsive</div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4" style="border: 2px solid green;">This is responsive responsive responsive responsive responsive responsive responsive</div>
+      </div>
+    </div>
+      <div class="alert alert-info" role="alert" style="width:25%;">This is a boostrap alert</div>
+      <div class="alert alert-success" role="alert" style="width:50%;">Well done!</div>
+      <div class="alert alert-danger" role="alert" style="width:66%;">Watch out!
+      </div>
+      <button type="button" class="btn btn-primary btn-md">Maybe
+      </button>
+      <button type="button" class="btn btn-success btn-lg">Yes</button>
+      <button type="button" class="btn btn-danger btn-sm">No</button>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <input type="Name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input type="Surname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="Phone number">Phone Number</label>
+          <input type="Phone Number" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email Adress</label>
+          <input type="Email" class="form-control">
+        </div>
+      </form>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/1500925839-golden-retriever-puppy.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/f3/bd/84/f3bd8497e15399201b634714ec5ed390.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/d7/2d/eb/d72deb6ea7c83283ebaf2c7e36e70714.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+    </body>
+</html>

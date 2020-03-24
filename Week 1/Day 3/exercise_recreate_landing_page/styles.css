@@ -1,0 +1,42 @@
+#main_header {
+	padding-top: 160px;
+	font-size: 42px;
+	color: rgb(255,255,255,0.9);
+}
+form {
+	margin-left: 650px;
+	font-size: 22px;
+	display: inline-block;
+}
+#button_get {
+	display: inline-block;
+	margin-left: 370px;
+	padding: 10px 15px;
+	content: 40px;
+	background-color: rgb(51,153,255,0.9);
+	color: white;
+	font-size: 22px;
+}
+#button_see {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 10px 15px;
+	content: 40px;
+	font-size: 22px;
+	color: black;
+	background-color: rgb(255,255,255,0.9);
+	border: white solid 1px;
+}
+#background {
+	padding-bottom: 160px;
+	background-image: url(https://c.pxhere.com/photos/da/af/books_bookstore_book_reading_shop_writer_sale_books_read-822866.jpg!d);
+}
+
+.noo {
+	color: white;
+	font-size: 20px;
+}
+
+#frame {
+	font-size: 30px;
+}

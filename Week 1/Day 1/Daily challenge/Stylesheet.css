@@ -1,0 +1,30 @@
+body {
+	font-size: 18px;
+	background-color: skyblue;
+}
+
+h1, h2,h3{
+	color: red;
+	border-bottom: 2px solid rgb(217,35,223);
+}
+
+li {
+	font-size: 25px
+}
+
+.Violence {display: none;}
+p .Violence { display: none; }
+p:hover .Vi { display: none; }
+p:hover .Violence { display: inline; }
+
+.Key {display: none;}
+p .Key { display: none; }
+p:hover .Yasuo { display: none; }
+p:hover .Key { display: inline; }
+
+#League {
+	margin-top: 50px;
+	margin-right: 700px;
+	height: 500px;
+	width: 400px;	
+}

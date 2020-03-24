@@ -1,0 +1,53 @@
+#paragraph1 {
+	margin: 0px 200px;
+	padding: 30px;
+	border: 2px solid green;
+	color: blue;
+}
+#Blue-stripe {
+	background-color: blue; 
+}
+#White-stripe {
+	background-color: white;
+}
+#Red-stripe {
+	background-color: red;
+}
+#Blue-stripe, #White-stripe, #Red-stripe {
+	display: inline;
+	padding: 40px 20px;
+}
+#Grey-box {
+	position: fixed;
+	background-color: grey;
+	width: 300px;
+	height: 150px;
+}
+#Blue-box {
+	background-color: skyblue;
+    width: 100px;
+    height: 100px;
+}
+#Orange-box {
+	position: absolute;
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+	top: 5px;
+	left: 5px;
+}
+#Text {
+	margin-top: 160px;
+}
+li:nth-child(2){
+	color: blue;
+}
+
+ul:hover {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+p:first-child{
+	background-color: pink;
+	color: white;
+}
