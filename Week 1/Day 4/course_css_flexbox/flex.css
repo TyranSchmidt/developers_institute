@@ -1,0 +1,60 @@
+#exercise_1 {
+  height : 250px;
+  border: 3px solid red;
+  display:flex; 
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#center {
+	align-self: center;
+	width: 50%;
+}
+
+#exercise_2 {
+	height: 300px;
+	border: 3px solid red;
+	display: flex;
+	flex-direction: column;
+}
+
+#right {
+	align-self: flex-end;
+	width: 30%;
+}
+
+#exercise_3 {
+	display: flex;
+	flex-direction: row;
+	border: 3px solid red;
+	padding: 10px;
+	font-size: 30px;
+	color: white;
+}
+
+#logo {
+	flex: 1;
+	background-color: purple;
+}
+
+#team {
+	flex: 2;
+	background-color: skyblue;
+}
+
+#products {
+	flex: 2;
+	background-color: pink;
+}
+
+#exercise_4 {
+  height : 300px;
+  border: 3px solid red;
+  display:flex; 
+  flex-direction: column;
+}
+
+.middle {
+	align-self: center;
+	width: 50%;
+}

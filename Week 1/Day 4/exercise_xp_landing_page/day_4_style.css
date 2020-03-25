@@ -1,0 +1,96 @@
+#background {
+	background-color: rgb(111,111,211,0.1);
+}
+
+h1 {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+p {
+	text-align: center;
+	font-size: 12px;
+}
+
+.big {
+	font-size: 40px;
+	color: rgb(15,119,223);
+	font-weight: bold;
+}
+
+#grid {
+	height: 450px;
+	display: grid;
+	grid-template-rows: repeat(8, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
+	padding: 40px 80px 40px 20px;
+	grid-template-areas:
+	"a . ."
+	"a . c"
+	"a b c"
+	"a b c"
+	"d b c"
+	"d b f"
+	". e f"
+	". e ."
+}
+
+#A {
+	grid-area: a;
+	border: 1px solid rgb(211,211,211,0.5);
+	padding: 20px;
+	background-color: white;
+}
+
+#B {
+	grid-area: b;
+	border: 1px solid rgb(211,211,211,0.5);
+	padding: 20px;
+	background-color: white;
+}
+
+#C {
+	grid-area: c;
+	border: 1px solid rgb(211,211,211,0.5);
+	padding: 20px;
+	background-color: white;
+}
+
+#D {
+	grid-area: d;
+	border: 1px solid rgb(211,211,211,0.5);
+	background-color: rgb(240,128,128);
+}
+
+#E {
+	grid-area: e;
+	border: 1px solid rgb(211,211,211,0.5);
+	background-color: rgb(15,119,223) ;
+}
+
+#F {
+	grid-area: f;
+	border: 1px solid rgb(211,211,211,0.5);
+	background-color: rgb(24,205,193); 
+}
+
+.names {
+	text-align: center;
+	color: white;
+}
+
+.sub {
+	color: white;
+	font-size: 12px;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 55px;
+	height: 45px;
+	border-radius: 50%;
+}
