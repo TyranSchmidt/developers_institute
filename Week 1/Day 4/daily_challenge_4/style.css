@@ -1,0 +1,77 @@
+#row {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	width: 391px;
+}
+
+.orange {
+	color: orange;
+	margin: 2px; 
+	background-color: orange;
+	display: inline-block;
+}
+
+.peach {
+	color: yellow;
+	margin: 2px; 
+	background-color: yellow;
+	display: inline-block; 
+}
+
+.brown {	
+	color: brown;
+	margin: 2px; 
+	background-color: brown;
+	display: inline-block;
+}
+
+#part2 {
+	display: grid;
+	border: 1px solid black;
+	grid-template-rows: repeat(16, 1fr);
+	grid-template-columns: repeat(16,1fr);
+	grid-gap: 5px;
+	grid-template-areas:
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b"
+	"s g d b s g d b s g d b s g d b" 
+
+}
+
+#silver {
+	background-color: rgb(209,209,209);
+	color: rgb(209,209,209);
+	grid-area: s;
+}
+
+#grey {
+	background-color: rgb(189,189,189);
+	color: rgb(189,189,189);
+	grid-area: g;
+}
+
+#dark {
+	background-color: rgb(61,61,61);
+	color: rgb(61,61,61);
+	grid-area: d;
+}
+
+#black {
+	background-color: black;
+	color: black;
+	grid-area: b;
+}

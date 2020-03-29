@@ -1,0 +1,143 @@
+@import	url("https://fonts.googleapis.com/css?family=Raleway");
+
+html,h1,h2,h3,h4,h5,h6,a {
+font-family: "Raleway";
+}
+
+.navs {
+	color: white;
+	font-size: 20px;
+}
+
+nav {
+	background-color: red;
+}
+
+#header {
+	position: absolute;
+	top: 35%;
+	margin-left: 20%;
+}
+
+h1 {
+	font-size: 40px;
+	color: rgb(235,140,16);
+	font-weight: bold;
+}
+
+p {
+	font-size: 22px;
+}
+
+#background {
+	background-image: url('images/headerback.jpg');
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#overlay {
+	background-color: rgba(255,255,255,0.7);
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	text-align: center;
+	margin: 4em;
+	color: orange;
+	font-weight: bold;
+	font-size: 34px;
+}
+
+#round {
+	border-radius: 50%;
+	height: 95%;
+	width: 100%;
+}
+
+.center_text {
+	margin-left: 30%;
+}
+
+#bordered {
+	border-right: 3px solid blue;
+}
+
+h3 {
+	font-weight: bold;
+	color: teal;
+}
+
+.port {
+	width: 365px;
+	height: 250px;
+	padding: 10px;
+}
+
+.ports {
+	width: 357px;
+	height: 250px;
+}
+
+.cards {
+	width: 357px;
+	height: 250px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+h5 {
+	color: red;
+}
+
+.card_team {
+	width: 250px;
+	height: 280px;
+	margin-right: 20px;
+	display: inline-block;
+	border-bottom-left-radius: 28%;
+	background-color: orange;
+	position: relative;
+}
+
+.team {
+	width: 250px;
+	height: 250px;
+}
+
+.extra, .font_size {
+	font-size: 16px;
+	height: 12px;
+}
+
+.font_size {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.card_team:hover {
+	background-color: orange;
+	width: 250px;
+	height: 280px;
+	border-bottom-left-radius: 0%;
+	position: absolute;
+}
+
+#top_margin {
+	margin-top: 200px;
+}
+
+.inputs {
+	width: 100%;
+	margin-bottom: 30px;
+	height: 50px;
+}
+
+textarea {
+	width: 100%;
+	margin-bottom: 30px;
+}
