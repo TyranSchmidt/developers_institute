@@ -125,6 +125,7 @@ h5 {
 	height: 280px;
 	border-bottom-left-radius: 0%;
 	position: absolute;
+	bottom: 0;
 }
 
 #top_margin {
@@ -140,4 +141,10 @@ h5 {
 textarea {
 	width: 100%;
 	margin-bottom: 30px;
+}
+
+#send {
+	margin-bottom: 90px;
+	font-size: 20px;
+	width: 100%;
 }
