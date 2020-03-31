@@ -12,9 +12,9 @@ let both = third + " " + fourth;
 console.log(both);
 
 let first_number = prompt("Give me your first number");
-console.log(first_number);
+console.log("The first number is " + first_number);
 let boolean1 = isNaN(first_number);
-console.log(boolean1)
+console.log("Is this a number? " + !boolean1)
 
 if (boolean1 == true) {
 	alert("Please enter a valid number")
@@ -22,9 +22,9 @@ if (boolean1 == true) {
 
 else {
 let second_number = prompt("Give me your second number");
-console.log(second_number);
+console.log("The second number is " + second_number);
 let boolean2 = isNaN(second_number);
-console.log(boolean2)
+console.log("Is this a number? " + !boolean2)
 
 
 if (boolean2 == true) {
@@ -33,9 +33,14 @@ if (boolean2 == true) {
 
 else {
 
-console.log(Number(first_number) + Number(second_number));
-console.log(first_number - second_number);
-console.log(first_number * second_number);
-console.log(first_number / second_number);
+alert("The numbers added together = " + (Number(first_number) + Number(second_number)));
+alert("The numbers subtracted from eachother = " + (first_number - second_number));
+alert("The numbers multiplied together = " + (first_number * second_number));
+alert("The numbers divided by eachother = " + (first_number / second_number));
+
+console.log("The numbers added together = " + (Number(first_number) + Number(second_number)));
+console.log("The numbers subtracted from eachother = " + (first_number - second_number));
+console.log("The numbers multiplied together = " + (first_number * second_number));
+console.log("The numbers divided by eachother = " + (first_number / second_number));
 }
 }
