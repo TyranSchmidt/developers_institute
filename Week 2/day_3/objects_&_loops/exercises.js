@@ -1,47 +1,47 @@
-// let ID = {
-// 	username : "foodisgood",
-// 	password : "1314",
-// }
+let ID = {
+	username : "foodisgood",
+	password : "1314",
+}
 
-// let database = [ID]
+let database = [ID]
 
-// let newsfeed = [
-// 	{
-// 		username : "break",
-// 		timeline : "2000-2020",
-// 	},
-// 	{
-// 		username : "main",
-// 		timeline : "1992-2020",
-// 	},
-// 	{
-// 		username : "irrelevant",
-// 		timeline : "1995 - 2020",
-// 	},
-// ]
+let newsfeed = [
+	{
+		username : "break",
+		timeline : "2000-2020",
+	},
+	{
+		username : "main",
+		timeline : "1992-2020",
+	},
+	{
+		username : "irrelevant",
+		timeline : "1995 - 2020",
+	},
+]
 
-// let i = 0 
 
-// for (i = 0; i < 16; i++) {
-// 	if (i % 2 == 0) {
-// 		console.log(i + " is an even number")
-// 	} else {
-// 		console.log(i + " is an odd number")
-// 	}
-// }
 
-// let person = {
-// fname:"John", 
-// lname:"Doe", 
-// age:25,
-// friends:["Lea", "Joanna", "Mark"]
-// };
+for (i = 0; i < 16; i++) {
+	if (i % 2 == 0) {
+		console.log(i + " is an even number")
+	} else {
+		console.log(i + " is an odd number")
+	}
+}
 
-// for (let x in person) {
-// 	console.log(person[x])
-// } for (let x of person.friends) {
-// 	console.log(x)
-// }
+let person = {
+fname:"John", 
+lname:"Doe", 
+age:25,
+friends:["Lea", "Joanna", "Mark"]
+};
+
+for (let x in person) {
+	console.log(person[x])
+} for (let x of person.friends) {
+	console.log(x)
+}
 
 let names = ["john", "sarah", 23, "Rudolf",34]
 
