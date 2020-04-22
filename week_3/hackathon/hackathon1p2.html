@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense Tracker</title>
+	<link rel="stylesheet" type="text/css" href="hackathon1p2.css">
+</head>
+<body>	
+	<section class="container">
+		<button id="log_out">Log out</button>
+		<form id="form_input">
+		    <div class="row">
+		    	<div>
+		    		<input class="input1" type="text" name="Name" placeholder="Enter your name" required>
+		    		<button id="add" type="button">Add</button>
+		        </div>
+		        <div>
+		    		<input class="input1" type="date" name="Date" required>
+		        </div>
+		        <div>
+		    		<input class="input1" type="text" name="Location" placeholder="Enter the location" required>
+		        </div>
+		    </div>
+		    <div class="row">
+		    	<div id="selection">
+		    	    <select class="input1" name="type" required>
+			    	 	<option value="">Choose an expense</option>
+			    	 	<option value="restaurant">Restaurant</option>
+			    	 	<option value="shopping">Shopping</option>
+			    	 	<option value="supermarket">Supermarket</option>
+			    	 	<option value="leisure">Leisure</option>
+			    	 	<option value="medicine">Medicine</option>
+			    	 	<option value="rent">Rent</option>
+			    	 	<option value="education">Education</option>
+			    	 	<option value="other">Other</option>
+			    	</select>
+		    	 </div>
+		    	 <div>
+		    	 	<input class="input1" type="number" name="Cost" placeholder="Enter the total cost" min="0" required>
+		    	 </div>
+		    	 <button id="input_btn" type="button">Submit</button>
+		    </div>
+	    </form>
+	    <div>
+	    	<h1 id="header">Calculate Costs</h1>
+		  	<input class="input2" type="text" name="name" placeholder="Enter Name">
+	        <input class="input2" type="expense" name="expense" placeholder="Enter Expense"><br>
+	        <!-- from:<input class="input2" type="date" name="date_from">
+	        to:<input class="input2" type="date" name="date_to"> -->
+	        <button id="calculate">Calculate Cost</button>
+	    </div>
+	    <table id="table" class="container">
+			<tr class="row">
+		  		<th>Name</th>
+		  		<th>Date</th>
+		  		<th>Location</th>
+		  		<th>Expense Type</th>
+		  		<th id="cost">Cost</th>
+		  	</tr>	
+	  </table>
+	  
+	</section>
+	<script type="text/javascript" src="hackathon1p2.js"></script>
+</body>
+</html>

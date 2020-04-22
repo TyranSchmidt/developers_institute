@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;500&display=swap");
+
+
+html > body {
+	background-color: #80ccff;
+	color: purple;
+	font-size: 18px;
+}
+
+input, #selection select{
+	font-family: "Montserrat";
+	border-radius: 5px;
+	outline: none;
+	padding: 5px 5px 5px 10px;
+	font-size: 15px;
+}
+
+.input1{
+	display: block;
+}
+
+button{
+	font-family: "Montserrat";
+	font-size: 13px;
+	font-style: italic;
+	padding: 7px;
+	border-radius: 4px;
+	background-color: #ff9999; 	
+}
+
+::placeholder{
+	color: black;
+	opacity: 1;
+}
+
+.input1, #input_btn, .input2, #calculate {
+	margin: 20px 20px;
+	width: 200px;
+}
+
+form, table{
+	border: solid blue 1px;
+	border-radius: 5px;
+}
+
+#log_out {
+	float: right;	
+	margin: 5px;
+}
+
+#table {
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#header {
+	margin-left: 20px;
+	font-size: 30px;
+	font-family: "Roboto";
+}
+
+
