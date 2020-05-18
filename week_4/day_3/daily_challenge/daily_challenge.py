@@ -15,3 +15,4 @@ if user_input == "encrypt":
 	print(enc_text)
 elif user_input == "decrypt":
 	print(dec_text)
+
