@@ -1,0 +1,20 @@
+{% extends 'Base.html' %}
+
+{% block header %}
+<h1>Welcome to my pokemon card game site</h1>
+{% endblock %}
+
+{% block content %}
+<div id="home_div">
+    <p>Total users registered: {{ count }}</p>
+    <p>Hello trainer, are you ready to join the ultimate pokemon card game experience?</p>
+    <ul>
+        <li>Collect unique cards from your favourite pokemon games!</li>
+        <li>Trade cards with other players or sell them for our ingame currency!</li>
+        <li>Battle other trainers in this unique card game experience!</li>
+        <li>Can you become the ultimate trainer?</li>
+    </ul>
+    <p>Sign up now to find out!</p>
+</div>
+
+{% endblock %}

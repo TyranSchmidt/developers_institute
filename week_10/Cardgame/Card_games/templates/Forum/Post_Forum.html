@@ -1,0 +1,44 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+    <div class="container" id="main_post">
+        <h1>{{ post.title }}</h1>
+        <h3>Created by: {{ post.user.username}}</h3>
+        <p style="font-size: 14px;">{{ post.created_at }}</p>
+        <p>{{ post.desc }}</p>
+        <form id="comment_box" method="POST">
+            {% csrf_token %}
+            {{ request.user }}{{ form.as_p }}
+            <button id="comment_btn" class="btn btn-success" type="submit" name="btn_comment">Add comment</button>
+        </form>
+        {% for comment in post.comment_set.all %}
+            <div id="comments">
+                <h6>{{ comment.user.username }}, {{ comment.created_at }}</h6>
+                <p> {{ comment.desc }} </p>
+                {% if request.user == comment.user %}
+                <a href="{% url 'comment_delete' post.id comment.id %}">Delete Comment</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <style>
+        #main_post {
+            background-color: RGB(255,255,255,0.8);
+        }
+
+        #comment_btn {
+            margin: 20px 0px 20px 0px;
+        }
+
+        #comments {
+            border: 1px black solid;
+            background-color: RGB(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        #comment_box {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    </style>
+{% endblock %}

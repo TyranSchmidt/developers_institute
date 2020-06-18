@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Creation</title>
+</head>
+<body>
+    <h1>Create Your Profile</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create!</button>
+    </form>
+    <style>
+    body {
+        background-image: url({% block bg_image %}https://wallpaperaccess.com/full/109332.jpg{% endblock %});
+        background-size: cover;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    h1 {
+        color: purple;
+        text-shadow: yellow 1px 0px 30px;
+    }
+
+   div, a, form {
+        background-color: rgb(255,122,0,0.7);
+        margin-right: 60%;
+    }
+
+    button {
+        margin-left: 30%;
+        margin-bottom: 30px;
+        padding: 5px;
+        background-color: blue;
+        color: white;
+        width: 100px;
+    }
+    </style>
+</body>
+</html>

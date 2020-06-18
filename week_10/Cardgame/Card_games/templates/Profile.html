@@ -1,0 +1,34 @@
+    {% extends 'Base.html' %}
+
+    {% block content %}
+    <div id="profile_div">
+        <h1>{{ request.user }}'s profile</h1>
+        <h4>Total Coins: {{ request.user.profile.coins }}</h4>
+        <h3>favourite species: {{ request.user.profile.species.name }}</h3>
+        </div>
+        {% if request.user.profile.image %}
+        <img src="{{ request.user.profile.image }}" width="100px" height="100px" alt="this is what represents you">
+        {% else %}
+        <img src="https://www.abc.net.au/news/image/954416-3x2-940x627.jpg" width="100px" height="100px" alt="no image here">
+        {% endif %}
+    <a href="{% url 'card_collection' %}">My cards</a>
+
+
+<!--        {% for type in card.pokemon.types %}-->
+<!--            {{ type.name }}-->
+<!--        {% endfor %}-->
+
+    <style>
+        body {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        #profile_div {
+            background-color: rgb(100,122,150,0.5);
+            margin-right: 80%;
+        }
+    </style>
+    {% endblock %}
+    {% block bg_image %}
+      {{ request.user.profile.species.image }}
+    {% endblock %}

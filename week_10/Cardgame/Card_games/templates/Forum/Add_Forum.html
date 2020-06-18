@@ -1,0 +1,25 @@
+{% extends 'Base.html' %}
+
+    {% block title %}Create Forum{% endblock %}
+
+    {% block content %}
+    <h2>Create Forum</h2>
+    <form method="post">
+        {% csrf_token %}
+        <h3>New Topic</h3>
+        {{ form.as_p }}
+        <button class="buttons" type="submit" name="button">Submit</button>
+    </form>
+
+
+    <style>
+        body {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        #text {
+            background-color: rgb(200,122,050,0.5);
+            margin-right: 80%;
+        }
+    </style>
+{% endblock %}

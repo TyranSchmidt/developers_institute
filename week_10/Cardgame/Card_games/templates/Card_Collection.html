@@ -1,0 +1,51 @@
+ {% extends 'Base.html' %}
+
+    {% block content %}
+     <a href="{% url 'profile' %}">Profile</a>
+    <div class="container" id="profile_div2">
+        <h1 class="col-4 offset-4">{{ request.user }}'s collection</h1>
+        <div class="row">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th class="col-auto">Pokemon</th>
+            <th class="col-auto">Type(s)</th>
+            <th class="col-auto">Rarity</th>
+        </tr>
+    {% for card in request.user.profile.deck.all %}
+        <tr>
+            <td></td>
+            <td class="col-auto">{{ card.pokemon.name }}</td>
+            <td class="col-auto">temp</td>
+            <td class="col-auto">{{ card.pokemon.pokexp }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+        </div>
+    </div>
+<!--        {% for type in card.pokemon.types %}-->
+<!--            {{ type.name }}-->
+<!--        {% endfor %}-->
+    
+    <style>
+        body {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        #profile_div2 {
+            background-color: rgb(100,122,150,0.8);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table, td {
+            border: 1px solid black;
+            margin: 20px;
+        }
+    </style>
+    {% endblock %}
+    {% block bg_image %}
+      {{ request.user.profile.species.image }}
+    {% endblock %}
